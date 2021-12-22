@@ -1,0 +1,171 @@
+:root {
+    --cell-size: 100px;
+    --marker-size: calc(var(--cell-size)*0.8);
+    font-family: 'Lato', sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #202124;
+}
+
+.header {
+    background-color: #202124;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    height: 20vh;
+}
+
+.board {
+    width: 100vw;
+    height: 40vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    background-color: #202124;
+}
+
+.message-box {
+    margin-top: 70px;
+    margin-bottom: 0px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: white;
+    font-size: 40px;
+}
+
+.message-box button {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background-color: #202124;
+    color: white;
+    border: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.5s;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.message-box button:hover {
+    background-color: white;
+    color: #202124;
+}
+
+.message-box.show{
+    display: flex;
+}
+
+.message {
+    color: transparent;
+    text-shadow: 0 0 0 white;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--cell-size);
+    width: var(--cell-size);
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.cell:nth-child(3n + 1) {
+    border-left: none;
+}
+
+.cell:last-child,
+.cell:nth-child(8),
+.cell:nth-child(7) {
+    border-bottom: none;
+}
+
+.x::after {
+    content: "\274C"; /* use the hex value here... */
+    font-size: var(--marker-size);
+    text-align: center;
+    justify-content: center;
+    color: transparent;
+    text-shadow: 0 0 0 white;
+    cursor: not-allowed;
+}
+
+.o::after {
+    content: "\2B55"; /* use the hex value here... */
+    font-size: var(--marker-size);
+    text-align: center;
+    justify-content: center;
+    color: transparent;
+    text-shadow: 0 0 0 white;
+    cursor: not-allowed;
+}
+
+.board.turnx > .cell:not(.x):not(.o)::after {
+    content: "\274C"; /* use the hex value here... */
+    font-size: var(--marker-size);
+    text-align: center;
+    justify-content: center;
+    color: transparent;
+    text-shadow: 0 0 0 gray;
+    display: none;
+}
+
+.board.turno > .cell:not(.x):not(.o)::after {
+    content: "\2B55"; /* use the hex value here... */
+    font-size: var(--marker-size);
+    text-align: center;
+    justify-content: center;
+    color: transparent;
+    text-shadow: 0 0 0 gray;
+    display: none;
+}
+
+.board.turnx > .cell:not(.x):not(.o):hover::after {
+    display: flex;
+}
+
+.board.turno > .cell:not(.x):not(.o):hover::after {
+    display: flex;
+}
+
+.hide > .cell {
+    cursor: not-allowed;
+    border-color: gray;
+}
+
+.hide .x::after {
+    text-shadow: 0 0 0 gray;
+}
+
+.hide .o::after {
+    text-shadow: 0 0 0 gray;
+}
