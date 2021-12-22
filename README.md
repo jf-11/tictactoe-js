@@ -13,7 +13,7 @@ This is a simple TicTacToe game built using JavaScript, CSS and HTML.
 
 ## Try it
 
-[index.html](https://github.com/jf-11/tictactoe-js/code)
+[index.html](https://github.com/jf-11)
 
 ## About
 
