@@ -11,6 +11,10 @@ This is a simple TicTacToe game built using JavaScript, CSS and HTML.
     <img src="./img/tictactoe.gif">
 </p>
 
+## Try it
+
+[codepen.io](https://codepen.io/jf-11/pen/rNGGNLv)
+
 ## About
 
 This is my first little "project" using JavaScript, CSS and HTML, so sorry for the messy code.
