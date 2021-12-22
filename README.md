@@ -17,6 +17,6 @@ This is a simple TicTacToe game built using JavaScript, CSS and HTML.
 
 ## About
 
-This is my first little "project" using JavaScript, CSS and HTML, so sorry for the messy code.
+This is my first little "project" using JavaScript, CSS and HTML.
 
 
