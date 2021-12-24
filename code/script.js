@@ -85,7 +85,7 @@ function checkWin(markToPlace) {
 // define function for winning messageBox
 function displayMessage(isWin,isDraw) {
     if (isWin) {
-        message.textContent = `Player ${isTurnX ? "&#10060 " : "&#11093 "} Wins!`;
+        message.textContent = `Player ${isTurnX ? "X " : "O "} Wins!`;
         messageBox.classList.add(showMessage);
         board.classList.remove(turnO,turnX);
         board.classList.add(hideBoard);
