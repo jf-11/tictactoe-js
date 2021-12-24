@@ -91,7 +91,7 @@ function displayMessage(isWin,isDraw) {
         board.classList.add(hideBoard);
         removeListeners();
     };
-    if (isDraw) {
+    if (isDraw && !isWin) {
         message.textContent = "Draw!";
         messageBox.classList.add(showMessage);
         board.classList.remove(turnO,turnX);
