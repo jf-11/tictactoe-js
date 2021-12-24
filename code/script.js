@@ -85,14 +85,14 @@ function checkWin(markToPlace) {
 // define function for winning messageBox
 function displayMessage(isWin,isDraw) {
     if (isWin) {
-        message.innerHTML = `Player ${isTurnX ? "&#10060 " : "&#11093 "} Wins!`;
+        message.textContent = `Player ${isTurnX ? "&#10060 " : "&#11093 "} Wins!`;
         messageBox.classList.add(showMessage);
         board.classList.remove(turnO,turnX);
         board.classList.add(hideBoard);
         removeListeners();
     };
     if (isDraw) {
-        message.innerHTML = "Draw!";
+        message.textContent = "Draw!";
         messageBox.classList.add(showMessage);
         board.classList.remove(turnO,turnX);
         board.classList.add(hideBoard);
