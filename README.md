@@ -2,9 +2,9 @@
 This is a simple TicTacToe game built using JavaScript, CSS and HTML.
 
 <p align="center">
-    <img src="https://img.shields.io/badge/-HTML5-E44D26?style=flat&logo=html5&logoColor=white"/>
-    <img src="https://img.shields.io/badge/-CSS3-2965f1?style=flat&logo=css3&logoColor=white"/>
-    <img src="https://img.shields.io/badge/-JavaScript-F0DB4F?style=flat&logo=javascript&logoColor=white"/>
+    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
+    <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/>
+    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 </p>
 
 <p align="center">
@@ -14,9 +14,4 @@ This is a simple TicTacToe game built using JavaScript, CSS and HTML.
 ## Try it
 
 [![CodePen](https://img.shields.io/badge/CodePen-white?style=for-the-badge&logo=codepen&logoColor=black)](https://codepen.io/jf-11/pen/rNGGNLv)
-
-## About
-
-This is my first little "project" using JavaScript, CSS and HTML.
-
 
