@@ -13,7 +13,7 @@ This is a simple TicTacToe game built using JavaScript, CSS and HTML.
 
 ## Try it
 
-[codepen.io](https://codepen.io/jf-11/pen/rNGGNLv)
+[![CodePen](https://img.shields.io/badge/CodePen-white?style=for-the-badge&logo=codepen&logoColor=black)](https://codepen.io/jf-11/pen/rNGGNLv)
 
 ## About
 
